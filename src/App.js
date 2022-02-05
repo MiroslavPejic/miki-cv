@@ -1,77 +1,19 @@
-/*
-import logo from './logo.svg';
-import './App.css';
+import { React, useState, useEffect } from 'react';
+import { CustomParallax } from './Components/CustomParallax.js';
+
+import image2 from './assets/image_1.jfif';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-*/
 
-import React, { useState, useEffect } from "react";
-import "./App.scss";
-
-function App() {
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const renderContent = () => (
-    <>
-      <div className="Parallax__content__heading">
-        <h1 className="Parallax__content__heading__text">Closure</h1>
-        <h2 className="Parallax__content__heading__caption">
-          Your one-stop source of Web Development tricks
-        </h2>
+    return (
+      <div style={{ textAlign: 'center' }}>
+        <CustomParallax image={image2}/>
+        <CustomParallax image={image2}/>
+        <CustomParallax image={image2}/>
+        <CustomParallax image={image2}/>
+        <div style={{ height: '100vh' }}></div>
       </div>
-      <div className="Parallax__content__cta">
-        <p>
-          <b>1. Like the video.</b> Because it helps me and my channel
-        </p>
-        <p>
-          <b>2. Like the video.</b> To see more content like that!
-        </p>
-        <p>
-          <b>3. Follow the Github link.</b> And play with this code yourself!
-        </p>
-      </div>
-    </>
-  );
-
-  return (
-    <section className="Parallax">
-      <div
-        className="Parallax__background"
-        style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
-      />
-      <div
-        className="Parallax__background-triangles"
-        style={{ transform: `translateY(${offsetY * 0.8}px)` }}
-      />
-      <div className="Parallax__content">{renderContent()}</div>
-    </section>
-  );
+    );
 }
 
 export default App;
