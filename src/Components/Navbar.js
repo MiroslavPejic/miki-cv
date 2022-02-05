@@ -6,6 +6,7 @@ import { mdOutlineRestaurantMenu } from 'react-icons/md';
 import { BsPersonCircle } from "react-icons/bs";
 
 import navbarImage from '../assets/navbar_image.png';
+import navbarNameImage from '../assets/name_image.jpg';
 
 import '../css/navbar.css';
 
@@ -16,7 +17,7 @@ export const Navbar = () => {
         <nav className="app__navbar">
           <div className="app__navbar-logo">
             <BsPersonCircle className="app__navbar-icon"/>
-            <img src={navbarImage} alt="app logo" />
+            <img src={navbarNameImage} alt="app logo" />
           </div>
           <ul className="app__navbar-links">
             <li className="p__opensans"><a href="#home">Home</a></li>

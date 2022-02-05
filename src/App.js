@@ -1,6 +1,9 @@
 import { React, useState, useEffect } from 'react';
 import { CustomParallax } from './Components/CustomParallax.js';
+
+// custom components
 import { Navbar } from './Components/Navbar.js';
+import { Footer } from './Components/Footer.js';
 
 import image2 from './assets/image_1.jfif';
 
@@ -14,8 +17,8 @@ function App() {
           <CustomParallax image={image2}/>
           <CustomParallax image={image2}/>
           <CustomParallax image={image2}/>
-          <div style={{ height: '100vh' }}></div>
         </div>
+        <Footer />
       </>
     );
 }
