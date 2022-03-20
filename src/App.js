@@ -2,6 +2,8 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { styled } from '@mui/material/styles';
 
+import {BrowserView, MobileView} from 'react-device-detect';
+
 import { CustomParallax } from './Components/CustomParallax.js';
 
 import Paper from '@mui/material/Paper';
@@ -114,29 +116,41 @@ function App() {
 
     return (
       <>
-        <section class="background up-scroll">
-          <div class="content-wrapper">
-            <p class="content-title">Full Page Parallax Effect</p>
-            <p class="content-subtitle">Scroll down and up to see the effect!</p>
+        <BrowserView>
+          <section class="background up-scroll">
+            <div class="content-wrapper">
+              <p class="content-title">Full Page Parallax Effect</p>
+              <p class="content-subtitle">Scroll down and up to see the effect!</p>
+            </div>
+          </section>
+          <section class="background">
+            <div class="content-wrapper">
+              <p class="content-title">Cras lacinia non eros nec semper.</p>
+              <p class="content-subtitle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut massa mattis nibh semper pretium.</p>
+            </div>
+          </section>
+          <section class="background">
+            <div class="content-wrapper">
+              <p class="content-title">Etiam consequat lectus.</p>
+              <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+            </div>
+          </section>
+          <section class="background">
+            <div class="content-wrapper">
+              <Footer/>
+            </div>
+          </section>
+        </BrowserView>
+        <MobileView>
+          <Navbar/>
+          <div style={{ textAlign: 'center' }}>
+            <CustomParallax image={image2}/>
+            <CustomParallax image={image2}/>
+            <CustomParallax image={image2}/>
+            <CustomParallax image={image2}/>
           </div>
-        </section>
-        <section class="background">
-          <div class="content-wrapper">
-            <p class="content-title">Cras lacinia non eros nec semper.</p>
-            <p class="content-subtitle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut massa mattis nibh semper pretium.</p>
-          </div>
-        </section>
-        <section class="background">
-          <div class="content-wrapper">
-            <p class="content-title">Etiam consequat lectus.</p>
-            <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
-          </div>
-        </section>
-        <section class="background">
-          <div class="content-wrapper">
-            <Footer/>
-          </div>
-        </section> 
+          <Footer />
+        </MobileView>
       </>
     );
 }
