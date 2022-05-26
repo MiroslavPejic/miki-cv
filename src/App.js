@@ -147,9 +147,18 @@ function App() {
         <MobileView>
           <Navbar/>
           <div style={{ textAlign: 'center' }}>
-            <CustomParallax image={backgroundImage1}/>
-            <CustomParallax image={backgroundImage2}/>
-            <CustomParallax image={backgroundImage3}/>
+            <CustomParallax 
+              image={backgroundImage1}
+              type={1}
+            />
+            <CustomParallax 
+              image={backgroundImage2}
+              type={1}
+            />
+            <CustomParallax 
+              image={backgroundImage3}
+              type={1}
+            />
           </div>
           <Footer />
         </MobileView>
