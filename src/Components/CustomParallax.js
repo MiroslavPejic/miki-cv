@@ -6,18 +6,9 @@ import '../css/customparallax.css';
 export const CustomParallax =({ image, type }) => {
 
     const [parallaxType, setParralaxType] = React.useState(1);
-    const [view, setView] = React.useState();
 
     React.useEffect(() => {
       setParralaxType(type);
-
-      if(parallaxType === 1) {
-        setView(parallax_1)
-      } else if(parallaxType === 2) {
-        setView(parallax_2);
-      } else {
-        setView(parallax_1);
-      }
     }, [])
 
     const parallax_1 = () => {
@@ -58,10 +49,11 @@ export const CustomParallax =({ image, type }) => {
       )
     }
 
-    return (<div>
-        {
-          view()
-        }
-      </div>
-    );
+    if(parallaxType === 1) {
+      return (<>{ parallax_1() } </>);
+    } else if(parallaxType === 2) {
+      return (<>{ parallax_2() } </>);
+    } else {
+      return (<>{ parallax_1() } </>);
+    }
 };
