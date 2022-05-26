@@ -17,6 +17,9 @@ import { Navbar } from './Components/Navbar.js';
 import { Footer } from './Components/Footer.js';
 
 import image2 from './assets/image_1.jfif';
+import backgroundImage1 from './assets/background_image_1.jpg';
+import backgroundImage2 from './assets/background_image_2.jpg';
+import backgroundImage3 from './assets/background_image_3.jpg';
 
 import './App.scss';
 
@@ -30,7 +33,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function App() {
 
-    // ------------- VARIABLES ------------- //
+  // ------------- VARIABLES ------------- //
   var ticking = false;
   var isFirefox = (/Firefox/i.test(navigator.userAgent));
   var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
@@ -144,10 +147,9 @@ function App() {
         <MobileView>
           <Navbar/>
           <div style={{ textAlign: 'center' }}>
-            <CustomParallax image={image2}/>
-            <CustomParallax image={image2}/>
-            <CustomParallax image={image2}/>
-            <CustomParallax image={image2}/>
+            <CustomParallax image={backgroundImage1}/>
+            <CustomParallax image={backgroundImage2}/>
+            <CustomParallax image={backgroundImage3}/>
           </div>
           <Footer />
         </MobileView>
