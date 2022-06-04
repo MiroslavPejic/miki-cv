@@ -1,39 +1,36 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import { styled } from '@mui/material/styles';
 
-import {BrowserView, MobileView} from 'react-device-detect';
-
-import { CustomParallax } from './Components/CustomParallax.js';
-
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-
-import ReactDOM from 'react-dom';
-import $ from 'jquery';
-
-// custom components
-import { Navbar } from './Components/Navbar.js';
-import { Footer } from './Components/Footer.js';
-
-import image2 from './assets/image_1.jfif';
-import backgroundImage1 from './assets/background_image_1.jpg';
-import backgroundImage2 from './assets/background_image_2.jpg';
-import backgroundImage3 from './assets/background_image_3.jpg';
-
-import './App.scss';
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
+import { Header } from './Components/Header/Header.js';
+import { Navigation } from './Components/Navigation/Navigation.js';
+import { About } from './Components/About/About.js';
+import { Experience } from './Components/Experience/Experience.js';
+import { Services } from './Components/Services/Services.js';
+import { Portfolio } from './Components/Portfolio/Portfolio.js';
+import { Testimonials } from './Components/Testimonials/Testimonials.js';
+import { Contact } from './Components/Contact/Contact.js';
+import { Footer } from './Components/Footer/Footer.js'
 
 function App() {
 
-  // ------------- VARIABLES ------------- //
+    return (
+      <>
+        <Header/>
+        <Navigation/>
+        <About/>
+        <Experience/>
+        <Services/>
+        <Portfolio/>
+        <Testimonials/>
+        <Contact/>
+        <Footer/>
+      </>
+    );
+}
+
+// OLD Functions
+/*
+ // ------------- VARIABLES ------------- //
   var ticking = false;
   var isFirefox = (/Firefox/i.test(navigator.userAgent));
   var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
@@ -116,9 +113,10 @@ function App() {
   }
 
   window.addEventListener('wheel', onWheel);
+*/
 
-    return (
-      <>
+// OLD HTML
+/*
         <BrowserView>
           <section class="background up-scroll">
             <div class="content-wrapper">
@@ -144,7 +142,7 @@ function App() {
             </div>
           </section>
         </BrowserView>
-        <MobileView>
+        <MobileView> 
           <Navbar/>
           <div style={{ textAlign: 'center' }}>
             <CustomParallax 
@@ -162,8 +160,6 @@ function App() {
           </div>
           <Footer />
         </MobileView>
-      </>
-    );
-}
+*/
 
 export default App;
