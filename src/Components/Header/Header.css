@@ -38,7 +38,7 @@ header {
 
 /* ==== IMAGE ==== */
 .me__image {
-    background: linear-gradient(var(--color-primary), transparent);
+    background: linear-gradient(grey, transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
