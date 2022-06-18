@@ -1,4 +1,4 @@
-.container.contact__container {
+.contact__container {
     width: 58%;
     display: grid;
     grid-template-columns: 30% 58%;
@@ -54,15 +54,23 @@ input, textarea {
 
 /* ====== MEDIA QUERIES (Medium) ===== */
 @media screen and (max-width: 1024px) {
-    .contact.contact__container {
+    .contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
 
 /* ====== MEDIA QUERIES (Small) ===== */
 @media screen and (max-width: 600px) {
-    .contact.contact__container {
-        width: var(--container-width-sm);
+    .contact__container {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
