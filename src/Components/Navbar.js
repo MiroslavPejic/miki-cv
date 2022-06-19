@@ -20,8 +20,8 @@ export const Navbar = () => {
             <img src={navbarNameImage} alt="app logo" />
           </div>
           <ul className="app__navbar-links">
-            <li className="p__opensans"><a href="#">Home</a></li>
-            <li className="p__opensans"><a href="#">Art gallery</a></li>
+            <li className="p__opensans"><a href="/">Home</a></li>
+            <li className="p__opensans"><a href="/art-gallery">Art gallery</a></li>
           </ul>
           <div className="app__navbar-smallscreen">
             <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
@@ -29,8 +29,8 @@ export const Navbar = () => {
             <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
                 <mdOutlineRestaurantMenu fontSize={27} className="overlay__close" onClick={() => setToggleMenu(false)} />
                 <ul className="app__navbar-smallscreen_links">
-                <li><a href="#" onClick={() => setToggleMenu(false)}>Home</a></li>
-                <li><a href="#" onClick={() => setToggleMenu(false)}>Art gallery</a></li>
+                <li><a href="/" onClick={() => setToggleMenu(false)}>Home</a></li>
+                <li><a href="/art-gallery" onClick={() => setToggleMenu(false)}>Art gallery</a></li>
                 </ul>
             </div>
             )}

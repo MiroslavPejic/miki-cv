@@ -1,15 +1,13 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
-import { Header } from './Components/Header/Header.js';
-import { Navigation } from './Components/Navigation/Navigation.js';
-import { About } from './Components/About/About.js';
-import { Experience } from './Components/Experience/Experience.js';
-import { Services } from './Components/Services/Services.js';
-import { Portfolio } from './Components/Portfolio/Portfolio.js';
-import { Testimonials } from './Components/Testimonials/Testimonials.js';
-import { Contact } from './Components/Contact/Contact.js';
-import { Footer } from './Components/Footer/Footer.js';
+import {HomePage} from './Pages/HomePage.js';
+import {ArtGallery} from './Pages/ArtGallery.js';
 
 import { Navbar } from './Components/Navbar.js';
 
@@ -17,18 +15,17 @@ function App() {
 
     return (
       <>
-        <Navbar/>
-        <Header/>
-        <Navigation/>
-        <About/>
-        <Experience/>
-        <Services/>
-        <Portfolio/>
-        {
-          <Testimonials/>
-        }
-        <Contact/>
-        <Footer/>
+        <div className="App">
+            <BrowserRouter>
+              <div>
+                <Navbar/>
+                <Routes>
+                  <Route element={<HomePage/>} path="/" />
+                  <Route element={<ArtGallery/>} path="/art-gallery"/>
+                </Routes>
+              </div>
+            </BrowserRouter>
+          </div>
       </>
     );
 }
