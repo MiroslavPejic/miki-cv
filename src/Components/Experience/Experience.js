@@ -3,6 +3,9 @@ import './Experience.css'
 
 import {BsPatchCheckFill} from 'react-icons/bs';
 
+import frontEndData from './dataFiles/frontend.json';
+import backEndData from './dataFiles/backend.json';
+
 export const Experience = () => {
     return (
         <section id="experience">
@@ -11,83 +14,39 @@ export const Experience = () => {
 
           <div className="container experience__container">
               <div className="experience__frontend">
-                  <h3>Frontend Development</h3>
+                <h3>Frontend Development</h3>
                   <div className="experience__content">
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>HTML</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>CSS</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>Javascript</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>Bootstrap</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>Perl</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                </div>
+                    {
+                      frontEndData.data.map(({id, heading, level}) => {
+                        return(
+                          <article key={id} className="experience__details">
+                            <BsPatchCheckFill className="experience__details-icon"/>
+                            <div>
+                              <h4>{heading}</h4>
+                              <small className="text-light">{level}</small>
+                            </div>
+                          </article>
+                        )
+                      })
+                    }   
+                  </div>
               </div>
               <div className="experience__backend">
                 <h3>Backend Development</h3>
                     <div className="experience__content">
-                    <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>MySQL</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>MongoDB</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>NodeJS</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>Python</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
-                      <article className="experience__details">
-                          <BsPatchCheckFill className="experience__details-icon"/>
-                          <div>
-                            <h4>Perl</h4>
-                            <small className="text-light">Experienced</small>
-                          </div>
-                      </article>
+                    {
+                      backEndData.data.map(({id, heading, level}) => {
+                        return(
+                          <article key={id} className="experience__details">
+                            <BsPatchCheckFill className="experience__details-icon"/>
+                            <div>
+                              <h4>{heading}</h4>
+                              <small className="text-light">{level}</small>
+                            </div>
+                          </article>
+                        )
+                      })
+                    }
                     </div>
               </div>
           </div>

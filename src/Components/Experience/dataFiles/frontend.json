@@ -1,0 +1,30 @@
+{
+    "data": 
+    [
+        {
+            "id": 1,
+            "heading": "HTML",
+            "level": "Experienced"
+        },
+        {
+            "id": 2,
+            "heading": "Javascript (React, JQuery ...)",
+            "level": "Experienced"
+        },
+        {
+            "id": 3,
+            "heading": "Xamarin forms",
+            "level": "Beginner"
+        },
+        {
+            "id": 4,
+            "heading": "Bootstrap, Material UI",
+            "level": "Intermediate"
+        },
+        {
+            "id": 5,
+            "heading": "CSS",
+            "level": "Experienced"
+        }
+    ]
+}

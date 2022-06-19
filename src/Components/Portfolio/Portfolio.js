@@ -1,51 +1,16 @@
 import React from 'react';
 import './Portfolio.css'
 
-import IMG1 from '../../assets/portfolio1.jpg';
+import IMG1 from '../../assets/portfolio2.jpg';
 
 const data = [
     {
         id: 1,
         image: IMG1,
-        title: 'This is a portfolio title',
-        github: 'https://github.com',
-        demo: 'https://github.com'
-    },
-    {
-        id: 2,
-        image: IMG1,
-        title: 'This is a portfolio title',
-        github: 'https://github.com',
-        demo: 'https://github.com'
-    },
-    {
-        id: 3,
-        image: IMG1,
-        title: 'This is a portfolio title',
-        github: 'https://github.com',
-        demo: 'https://github.com'
-    },
-    {
-        id: 4,
-        image: IMG1,
-        title: 'This is a portfolio title',
-        github: 'https://github.com',
-        demo: 'https://github.com'
-    },
-    {
-        id: 5,
-        image: IMG1,
-        title: 'This is a portfolio title',
-        github: 'https://github.com',
-        demo: 'https://github.com'
-    },
-    {
-        id: 6,
-        image: IMG1,
-        title: 'This is a portfolio title',
-        github: 'https://github.com',
-        demo: 'https://github.com'
-    },
+        title: 'Github repo for my portfolio website',
+        github: 'https://github.com/MiroslavPejic/miki-cv',
+        demo: 'https://github.com/MiroslavPejic/miki-cv'
+    }
 ]
 
 export const Portfolio = () => {

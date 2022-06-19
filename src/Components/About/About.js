@@ -24,22 +24,26 @@ export const About = () => {
                 <article className="about__card">
                   <FaAward className="about__icon"/>
                   <h5>Experience</h5>
-                  <small>3+ Years</small>
+                  <small>6+ Years</small>
                 </article>
                 <article className="about__card">
                   <FiUsers className="about__icon"/>
-                  <h5>Clients</h5>
-                  <small>200+ Clients</small>
+                  <h5>Integrations</h5>
+                  <small>15+ clients</small>
                 </article>
                 <article className="about__card">
                   <VscFolderLibrary className="about__icon"/>
                   <h5>Projects</h5>
-                  <small>80+ Completed</small>
+                  <small>20+ Completed</small>
                 </article>
               </div>
 
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I consider myself to be a very forward thinking person who when confronted with a problem thinks of ways to tackle that problem in the best possible way. I am a very outgoing person and will make decisions based on the best interest for everyone I am working with; I greatly enjoy working in a team as I think that this is the best way to produce on our ideas and it is vitally important to have a different perspective which I myself may not have initially. 
+              <br/>
+              Aside from work and education I very much enjoy spending my free time playing sports and following sports. During my time at TRDP I started organising 5 a side football matches regally for everyone, initially I was sceptical about how much interest there would be but was pleasantly surprised by the amount of interest which was great as it is also very important to bond with my colleagues outside of work, I also help work in the “social committee” at my present employed helping organise staff event like Christmas parties, summer parties and general “get together” of all our staff at various points in the year, I put myself forward for this committee as I very much enjoy organising events such as these.
+              <br/>
+              I am a massive football fan and I regularly follow my team Leicester City around the country from Newcastle to the south coast!
               </p>
 
               <a href="#contact" className="btn btn-primary">Let's Talk</a>

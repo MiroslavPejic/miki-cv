@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css'
 
 import { HeaderButtons } from './HeaderButtons.js';
-import ME from '../../assets/portrait_suit.png';
+import ME from '../../assets/DSC_0064.JPG';
 
 import { HeaderSocials } from './HeaderSocials.js';
 

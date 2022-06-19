@@ -10,28 +10,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import AVR1 from '../../assets/avatar1.jpg';
+import AVR1 from '../../assets/avatar2.jpg';
+import AVR2 from '../../assets/avatar3.jpg'
 
 var data = [
     {
         image: AVR1,
         name: 'Name',
-        review: 'Review'
+        review: 'Hard working, great teamplayer!'
     },
     {
-        image: AVR1,
+        image: AVR2,
         name: 'Name',
-        review: 'Review'
-    },
-    {
-        image: AVR1,
-        name: 'Name',
-        review: 'Review'
-    },
-    {
-        image: AVR1,
-        name: 'Name',
-        review: 'Review'
+        review: 'Passionate not only about development but outside of development!'
     }
 ]
 

@@ -1,0 +1,62 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "heading": "ui/ux",
+            "data": [
+                {
+                    "id": 1,
+                    "title": "Design frontent apps"
+                },
+                {
+                    "id": 2,
+                    "title": "Balsamiq wireframing"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "heading": "Fullstack development",
+            "data": [
+                {
+                    "id": 1,
+                    "title": "Creating databases and servers"
+                },
+                {
+                    "id": 2,
+                    "title": "API development"
+                },
+                {
+                    "id": 3,
+                    "title": "Command line development"
+                },
+                {
+                    "id": 4,
+                    "title": "Server maintenance"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "heading": "Cloud computing (AWS)",
+            "data": [
+                {
+                    "id": 1,
+                    "title": "API Gateway"
+                },
+                {
+                    "id": 2,
+                    "title": "Lambda"
+                },
+                {
+                    "id": 3,
+                    "title": "Cognito"
+                },
+                {
+                    "id": 4,
+                    "title": "RDS"
+                }
+            ]
+        }
+    ]
+}
