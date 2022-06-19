@@ -9,12 +9,15 @@ import { Services } from './Components/Services/Services.js';
 import { Portfolio } from './Components/Portfolio/Portfolio.js';
 import { Testimonials } from './Components/Testimonials/Testimonials.js';
 import { Contact } from './Components/Contact/Contact.js';
-import { Footer } from './Components/Footer/Footer.js'
+import { Footer } from './Components/Footer/Footer.js';
+
+import { Navbar } from './Components/Navbar.js';
 
 function App() {
 
     return (
       <>
+        <Navbar/>
         <Header/>
         <Navigation/>
         <About/>

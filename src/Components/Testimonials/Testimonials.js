@@ -22,7 +22,7 @@ var data = [
     {
         image: AVR2,
         name: 'Name',
-        review: 'Passionate not only about development but outside of development!'
+        review: 'Passionate developer!'
     }
 ]
 
