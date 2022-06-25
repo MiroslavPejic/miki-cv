@@ -6,7 +6,7 @@
 }
 
 // ------------- VARIABLES ------------- //
-$parallax-offset: 25vh;
+$parallax-offset: 65vh;
 $content-offset: 40vh;
 $transition-speed: 1.2s;
 $slide-number: 3;
@@ -18,7 +18,7 @@ $slide-number: 3;
     overflow: hidden;
     will-change: transform;
     backface-visibility: hidden;
-    height: 100vh + $parallax-offset;
+    height: 100vh + $content-offset;
     position: fixed;
     width: 100%;
     transform: translateY($parallax-offset);
@@ -34,15 +34,6 @@ $slide-number: 3;
         bottom: 0;
         background-color: rgba(0,0,0,.3);
     }
-    &:first-child {
-        background-image: url("./assets/background_image_1.jpg");
-    }
-    &:nth-child(2) {
-        background-image: url("./assets/background_image_2.jpg");
-    }
-    &:nth-child(3) {
-        background-image: url("./assets/background_image_3.jpg");
-    }
   }
 
   /* Set stacking context of slides */
@@ -50,6 +41,18 @@ $slide-number: 3;
     .background:nth-child(#{$i}) {
         z-index: ($slide-number + 1) - $i; 
     }
+}
+
+.background_1 {
+  background-image: url("./assets/background_image_1.jpg");
+}
+
+.background_2 {
+  background-image: url("./assets/background_image_2.jpg");
+}
+
+.background_3 {
+  background-image: url("./assets/background_image_3.jpg");
 }
 
 .content {
