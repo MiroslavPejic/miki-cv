@@ -16,7 +16,8 @@ function App() {
     return (
       <>
         <div className="App">
-            <BrowserRouter>
+            <BrowserRouter
+              forceRefresh={false}>
               <div>
                 <Navbar/>
                 <Routes>

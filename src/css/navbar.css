@@ -109,6 +109,10 @@
     font-family: fantasy;
 }
 
+.app__navbar-smallscreen_links li a {
+    display: block;
+}
+
 .app__navbar-smallscreen_links li:hover {
     color: var(--color-white);
 }

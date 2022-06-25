@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Parallax } from 'react-parallax';
 
 import '../css/customparallax.css';
 
-export const CustomParallax =({ image, type }) => {
+export const CustomParallax =({ image, type, heading, summary }) => {
 
     const [parallaxType, setParralaxType] = React.useState(1);
 
@@ -14,20 +15,24 @@ export const CustomParallax =({ image, type }) => {
     const parallax_1 = () => {
       return (
         <Parallax bgImage={ image } blur={{ min: -1, max: 5 }}>
-          <div style={{ height: 500 }}>
-            <div className="inlineStyle">Dinamic blur</div>
-          </div>
+          {heading !== undefined 
+          ? <div className="content-wrapper">
+              <p>{heading}</p>
+              <p>{summary}</p>
+            </div>
+          : <div/>
+          }
         </Parallax>
       )
     }
 
     const parallax_2 = () => {
       return (
-        <Parallax 
+        <Parallax
         bgImage={ image }
         strength={200}
         renderLayer={precentage => (
-          <div 
+          <div
             style={{
               position: 'absolute',
               width: '100px',
@@ -56,4 +61,11 @@ export const CustomParallax =({ image, type }) => {
     } else {
       return (<>{ parallax_1() } </>);
     }
-};
+}
+
+CustomParallax.propTypes = {
+  image: PropTypes.any,
+  type: PropTypes.number,
+  heading: PropTypes.string,
+  summary: PropTypes.string
+}
