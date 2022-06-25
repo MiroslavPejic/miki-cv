@@ -8,6 +8,7 @@
 // ------------- VARIABLES ------------- //
 $parallax-offset: 65vh;
 $content-offset: 40vh;
+$content-main-height: 500px;
 $transition-speed: 1.2s;
 $slide-number: 3;
 
@@ -56,8 +57,10 @@ $slide-number: 3;
 }
 
 .content {
+  &-main {
+    height: $content-main-height
+  }
   &-wrapper {
-  height: 100vh;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -65,7 +68,7 @@ $slide-number: 3;
   color: #fff;
   font-family: Montserrat;
   text-transform: uppercase;
-  transform: translateY($content-offset);
+  transform: translateY($content-main-height / 2);
   will-change: transform;
   backface-visibility: hidden;
   @include transition($transition-speed + .5, all, cubic-bezier(0.22, 0.44, 0, 1));

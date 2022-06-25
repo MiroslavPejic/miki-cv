@@ -15,7 +15,7 @@ export const CustomParallax =({ image, type, heading, summary }) => {
     const parallax_1 = () => {
       return (
         <Parallax bgImage={ image } blur={{ min: -1, max: 5 }}>
-          <div style={{ height: 500}}>
+          <div className="content-main">
             {heading !== undefined 
             ? <div className="content-wrapper">
                 <p>{heading}</p>
