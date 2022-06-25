@@ -15,13 +15,15 @@ export const CustomParallax =({ image, type, heading, summary }) => {
     const parallax_1 = () => {
       return (
         <Parallax bgImage={ image } blur={{ min: -1, max: 5 }}>
-          {heading !== undefined 
-          ? <div className="content-wrapper">
-              <p>{heading}</p>
-              <p>{summary}</p>
-            </div>
-          : <div/>
-          }
+          <div style={{ height: 500}}>
+            {heading !== undefined 
+            ? <div className="content-wrapper">
+                <p>{heading}</p>
+                <p>{summary}</p>
+              </div>
+            : <div/>
+            }
+          </div>
         </Parallax>
       )
     }
