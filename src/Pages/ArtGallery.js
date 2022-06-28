@@ -132,20 +132,15 @@ export const ArtGallery = () => {
             <CustomParallax 
               image={backgroundImage1}
               type={1}
-              heading={'This is a test heading'}
-              summary={'This is some test summary text'}
+              heading={'Scroll down for parallax effect'}
             />
             <CustomParallax 
               image={backgroundImage2}
               type={1}
-              heading={'This is a test heading'}
-              summary={'This is some test summary text'}
             />
             <CustomParallax 
               image={backgroundImage3}
               type={1}
-              heading={'This is a test heading'}
-              summary={'This is some test summary text'}
             />
           </div>
         </MobileView>
