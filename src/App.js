@@ -10,23 +10,17 @@ import {HomePage} from './Pages/HomePage.js';
 import {ArtGallery} from './Pages/ArtGallery.js';
 
 import { Navbar } from './Components/Navbar.js';
+import { NavSideBar } from './Components/NavSideBar/NavSideBar.js';
+
 
 function App() {
 
     return (
       <>
         <div className="App">
-            <BrowserRouter
-              forceRefresh={false}>
-              <div>
-                <Navbar/>
-                <Routes>
-                  <Route element={<HomePage/>} path="/" />
-                  <Route element={<ArtGallery/>} path="/art-gallery"/>
-                </Routes>
-              </div>
-            </BrowserRouter>
-          </div>
+          <NavSideBar/>
+          <HomePage/>
+        </div>
       </>
     );
 }

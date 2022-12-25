@@ -14,17 +14,19 @@ import { Footer } from '../Components/Footer/Footer.js';
 export const HomePage = () => {
     return(
         <>
-        <Header/>
-        <Navigation/>
-        <About/>
-        <Experience/>
-        <Services/>
-        <Portfolio/>
-        {
-          <Testimonials/>
-        }
-        <Contact/>
-        <Footer/>
+          <div>
+            <Header/>
+            <Navigation/>
+            <About/>
+            <Experience/>
+            <Services/>
+            <Portfolio/>
+            {
+              <Testimonials/>
+            }
+            <Contact/>
+            <Footer/>
+          </div>
       </>
     )
 }
