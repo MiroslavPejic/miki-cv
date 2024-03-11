@@ -1,4 +1,4 @@
-nav {
+.home-page-navigation {
     background: rgba(0,0,0,0.3);
     width: max-content;
     display: block;
@@ -14,7 +14,7 @@ nav {
     backdrop-filter: blur(15px);
 }
 
-nav a {
+.home-page-navigation a {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
@@ -23,10 +23,10 @@ nav a {
     font-size: 1.1rem;
 }
 
-nav a:hover {
+.home-page-navigation a:hover {
     background: rgba(0, 0, 0, 0.3);
 }
 
-nav a.active {
+.home-page-navigation a.active {
     background: var(--color-bg);
 }

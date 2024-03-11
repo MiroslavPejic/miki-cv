@@ -29,8 +29,8 @@ export const Portfolio = () => {
                                 </div>
                                 <h3>{title}</h3>
                                 <div className="portfolio__item-btn">
-                                    <a href={github} className="btn" target="_blank">Github</a>
-                                    <a href={demo} className="btn btn-primary" target="_blank">Github</a>
+                                    <a href={github} className="btn" target="_blank" rel="noreferrer">Github</a>
+                                    <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">Github</a>
                                 </div>
                             </article>
                         )

@@ -21,9 +21,9 @@ export const Footer = () => {
             </ul>
 
             <div className="footer__socials">
-                <a href="https://www.linkedin.com/in/miki-pejic-132bb3180/" target="_blank"><BsLinkedin/></a>
-                <a href="https://www.instagram.com/miki.pejic/" target="_blank"><FiInstagram/></a>
-                <a href="https://twitter.com/HDmiksta" target="_blank"><IoLogoTwitter/></a>
+                <a href="https://www.linkedin.com/in/miki-pejic-132bb3180/" target="_blank" rel="noreferrer"><BsLinkedin/></a>
+                <a href="https://www.instagram.com/miki.pejic/" target="_blank" rel="noreferrer"><FiInstagram/></a>
+                <a href="https://twitter.com/HDmiksta" target="_blank" rel="noreferrer"><IoLogoTwitter/></a>
             </div>
 
             <div className="footer__copyright">

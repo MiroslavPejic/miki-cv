@@ -16,7 +16,7 @@ export const Navigation = () => {
     const [activeNav, setActiveNav] = useState('#');
     
     return (
-        <nav>
+        <nav class="home-page-navigation">
             <a href='#'
                onClick={() => setActiveNav('#')}
                className={activeNav === '#' ? 'active' : ''}
