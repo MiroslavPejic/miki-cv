@@ -23,6 +23,12 @@ export const NavbarTop = () => {
 				<Link to="/blog">Blog</Link>
 				<Link to="/about-me">About Me</Link>
 				<Link to="/art-gallery">Art Gallery</Link>
+				|
+				<a target='_blank'
+            	   rel='noopener noreferrer' 
+				   href="https://miki-p-shop.myshopify.com/">
+					My Shop
+				</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
