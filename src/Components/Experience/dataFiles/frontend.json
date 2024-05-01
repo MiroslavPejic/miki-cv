@@ -25,6 +25,11 @@
             "id": 5,
             "heading": "CSS",
             "level": "Experienced"
+        },
+        {
+            "id": 6,
+            "heading": "Typescript",
+            "level": "Experienced"
         }
     ]
 }
