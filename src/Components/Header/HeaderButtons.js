@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../../assets/CV_Miroslav.docx';
+import CV from '../../assets/CV_Miroslav.pdf';
 
 export const HeaderButtons = () => {
     return (
