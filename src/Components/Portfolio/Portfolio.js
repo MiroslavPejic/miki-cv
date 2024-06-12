@@ -2,6 +2,7 @@ import React from 'react';
 import './Portfolio.css'
 
 import IMG1 from '../../assets/portfolio2.jpg';
+import IMG2 from '../../assets/chat-app.png'
 
 const data = [
     {
@@ -10,6 +11,13 @@ const data = [
         title: 'Github repo for my portfolio website',
         github: 'https://github.com/MiroslavPejic/miki-cv',
         demo: 'https://github.com/MiroslavPejic/miki-cv'
+    },
+    {
+        id: 2,
+        image: IMG2,
+        title: 'Github chat app',
+        github: 'https://github.com/MiroslavPejic/chat-app',
+        demo: 'https://github.com/MiroslavPejic/chat-app'
     }
 ]
 
