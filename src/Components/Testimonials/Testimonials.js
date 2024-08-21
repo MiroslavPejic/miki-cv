@@ -16,12 +16,12 @@ import AVR2 from '../../assets/avatar3.jpg'
 var data = [
     {
         image: AVR1,
-        name: 'Name',
+        name: 'Peter',
         review: 'Hard working, great teamplayer!'
     },
     {
         image: AVR2,
-        name: 'Name',
+        name: 'James',
         review: 'Passionate developer!'
     }
 ]

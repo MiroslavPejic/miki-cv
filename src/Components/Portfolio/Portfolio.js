@@ -3,6 +3,8 @@ import './Portfolio.css'
 
 import IMG1 from '../../assets/portfolio2.jpg';
 import IMG2 from '../../assets/chat-app.png'
+import IMG3 from '../../assets/Crypto-img.jpg'
+import IMG4 from '../../assets/banking-platform.png'
 
 const data = [
     {
@@ -18,6 +20,20 @@ const data = [
         title: 'Github chat app',
         github: 'https://github.com/MiroslavPejic/chat-app',
         demo: 'https://github.com/MiroslavPejic/chat-app'
+    },
+    {
+        id: 2,
+        image: IMG3,
+        title: 'Execify crypto platform',
+        github: 'https://github.com/MiroslavPejic/execify-miki',
+        demo: 'https://github.com/MiroslavPejic/execify-miki'
+    },
+    {
+        id: 2,
+        image: IMG4,
+        title: 'Everpay banking app',
+        github: 'https://github.com/MiroslavPejic/everpay-miki',
+        demo: 'https://github.com/MiroslavPejic/everpay-miki'
     }
 ]
 
