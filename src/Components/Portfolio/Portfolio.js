@@ -3,6 +3,9 @@ import './Portfolio.css'
 
 import IMG1 from '../../assets/portfolio2.jpg';
 import IMG2 from '../../assets/chat-app.png'
+import IMG3 from '../../assets/Crypto-img.jpg'
+import IMG4 from '../../assets/banking-platform.png'
+import IMG5 from '../../assets/kinetic-centar-login.jpg';
 
 const data = [
     {
@@ -18,6 +21,27 @@ const data = [
         title: 'Github chat app',
         github: 'https://github.com/MiroslavPejic/chat-app',
         demo: 'https://github.com/MiroslavPejic/chat-app'
+    },
+    {
+        id: 3,
+        image: IMG3,
+        title: 'Execify crypto platform',
+        github: 'https://github.com/MiroslavPejic/execify-miki',
+        demo: 'https://github.com/MiroslavPejic/execify-miki'
+    },
+    {
+        id: 4,
+        image: IMG4,
+        title: 'Everpay banking app',
+        github: 'https://github.com/MiroslavPejic/everpay-miki',
+        demo: 'https://github.com/MiroslavPejic/everpay-miki'
+    },
+    {
+        id: 5,
+        image: IMG5,
+        title: 'Kinetic centar - physiotherapy',
+        github: 'https://github.com/MiroslavPejic/kinetic-centar',
+        demo: 'https://github.com/MiroslavPejic/kinetic-centar'
     }
 ]
 
@@ -33,7 +57,7 @@ export const Portfolio = () => {
                         return(
                             <article key={id} className="portfolio__item">
                                 <div className="portfolio__item-image">
-                                    <img src={image} alt={title}/>
+                                    <img src={image} alt={title} style={{height: '300px', objectFit: 'contain'}}/>
                                 </div>
                                 <h3>{title}</h3>
                                 <div className="portfolio__item-btn">
