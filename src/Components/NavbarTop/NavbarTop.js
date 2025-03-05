@@ -29,6 +29,12 @@ export const NavbarTop = () => {
 				   href="https://miki-p-shop.myshopify.com/">
 					My Shop
 				</a>
+				|
+				<a target='_blank'
+            	   rel='noopener noreferrer' 
+				   href="https://main.d2bk2zp4dcjv9g.amplifyapp.com/">
+					Ski Bookings
+				</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
