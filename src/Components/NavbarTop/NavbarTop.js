@@ -35,6 +35,12 @@ export const NavbarTop = () => {
 				   href="https://main.d2bk2zp4dcjv9g.amplifyapp.com/">
 					Ski Bookings
 				</a>
+				|
+				<a target='_blank'
+            	   rel='noopener noreferrer' 
+				   href="https://main.d1byw4xc5jg2zw.amplifyapp.com/">
+					Backstreet barbers
+				</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
