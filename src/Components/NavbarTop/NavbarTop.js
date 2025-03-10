@@ -26,7 +26,7 @@ export const NavbarTop = () => {
 				|
 				<a target='_blank'
             	   rel='noopener noreferrer' 
-				   href="https://miki-p-shop.myshopify.com/">
+				   href="https://main.d2wjzzgdwb3l7w.amplifyapp.com/">
 					My Shop
 				</a>
 				|
